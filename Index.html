@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="title">Calculator</div>
+        <div class="calculator">
+            <input type="text" class="display" id="display" disabled></input>
+            <div class="keys">
+                <div class="row">
+                    <button value="7" onclick="display('7')">7</button>
+                    <button value="6"  onclick="display(6)">6</button>
+                    <button value="5"  onclick="display(5)">5</button>
+                    <button value="+" class="operator"  onclick="display('+')">+</button>
+                </div>
+                <div class="row">
+                    <button value="4"  onclick="display(4)">4</button>
+                    <button value="3"  onclick="display(3)">3</button>
+                    <button value="2"  onclick="display(2)">2</button>
+                    <button value="-"  onclick="display('-')" class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button value="c" class="clear" onclick="clearfun()">C</button>
+                    <button value="0" class="operator"  onclick="display(0)">0</button>
+                    <button value="/" class="operator"  onclick="display('/')">/</button>
+                    <button value="=" id="equals" onclick="compute()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="javascript.js"></script>
+    
+</body>
+</html>
