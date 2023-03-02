@@ -22,21 +22,24 @@ body{
 
  
 .calculator{
-  margin: auto;
-   border-radius: 5%;
-   border-radius: 9px;
-   display: flex;
-   flex-direction: column;
+    margin: auto;
+    border-radius: 5%;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-top: 19px;
     width: fit-content;
     padding:0px;
-   
+    top: 10vh;
+    position: relative;
+    padding: 8px;
+    box-shadow: 7px 9px 16px rgb(34, 33, 33);
 }
 @media only screen and (min-width: 600px) {
     .calculator{
-    box-shadow: 7px 9px 16px rgb(34, 33, 33);
+    
     padding: 20px;
     }
  }
