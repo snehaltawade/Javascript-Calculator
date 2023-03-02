@@ -6,8 +6,6 @@ html, body {
 }
 body{
     background: #ebebeb;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,251,250,1) 18%, rgba(194,238,247,1) 100%);
-    
     background-image: url('./assets/calc.jpg');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -21,7 +19,7 @@ body{
     font-size: xx-large;
     padding-top: 5%;
     padding: 20px;
-    background-color: #66b8ff;
+    background-color: #62a7e3;
 }
 
  
@@ -99,7 +97,7 @@ button:hover{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(229,242,240,1) 4%);
 }
 #equals{
-    background-color: #66b8ff; 
+    background-color: #62a7e3; 
     color: white;
 }
 /* .clear{
