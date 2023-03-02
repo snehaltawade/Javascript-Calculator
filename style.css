@@ -7,21 +7,26 @@ html, body {
 body{
     background: #ebebeb;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,251,250,1) 18%, rgba(194,238,247,1) 100%);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,251,250,1) 18%);
+    
+    background-image: url('./assets/calc.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
     height: 100vh;
 }
 .title{
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'fangsong';
     font-weight: bolder;
     font-size: xx-large;
     padding-top: 5%;
     padding: 20px;
+    background-color: cadetblue;
 }
 
  
 .calculator{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,251,250,1) 18%);
     margin: auto;
     border-radius: 5%;
     border-radius: 9px;
