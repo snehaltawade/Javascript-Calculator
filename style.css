@@ -21,7 +21,7 @@ body{
     font-size: xx-large;
     padding-top: 5%;
     padding: 20px;
-    background-color: cadetblue;
+    background-color: #66b8ff;
 }
 
  
@@ -99,7 +99,7 @@ button:hover{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(229,242,240,1) 4%);
 }
 #equals{
-    background-color: #2957c2; 
+    background-color: #66b8ff; 
     color: white;
 }
 /* .clear{
