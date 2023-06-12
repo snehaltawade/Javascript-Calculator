@@ -9,47 +9,54 @@
 </head>
 <body>
     <div>
-        <div class="title">Standard Calculator</div>
+       
         <div class="calculator">
+            <div class="title">Standard Calculator</div>
+            <!-- <input type="text" class="display" id="displayexp" disabled></input> -->
             <input type="text" class="display" id="display" disabled></input>
-            <div class="keys">
-                <div class="row">
-                    <button value="7" onclick="display('%')">%</button>
-                    <button value="ce"  onclick="clearfun()">CE</button>
-                    <button value="c" class="clear" onclick="clearfun()">C</button>
-                    <button value="x" onclick="clearLast()">x</button>
+            <table class="keys">
+                <tr class="row">
+                 <td>   <button value="7" onclick="display('%')">%</button></td>
+                 <td> <button value="ce"  onclick="clearfun()">CE</button></td>
+                 <td>  <button value="c" class="clear" onclick="clearfun()">C</button></td>
+                 <td> <button value="/" class="operator"  onclick="display('/')">/</button></td>              
+                 </tr>
+                 <tr class="row">
+                    <td> <button value="1/x"  onclick="fraction()">1/x</button></td>
+                    <td> <button value="1/x"  onclick="fraction()">1/x</button></td>
+                    <td> <button value="x2"  onclick="power()">x&#178;</button></td>
+                    <td> <button value="2rootx" class="operator"  onclick="display(2)">&#8730;</button></td>
+                   
+                </tr>
+
+                <tr class="row">
+                   <td> <button value="7" onclick="display('7')">7</button></td>
+                   <td> <button value="8"  onclick="display(8)">8</button></td>
+                   <td> <button value="9"  onclick="display(9)">9</button></td>
+                   <td> <button value="*" class="operator"  onclick="display('*')">*</button></td>
+                </tr>
+
+                <tr class="row">
+                   <td> <button value="7" onclick="display('4')">4</button></td>
+                   <td> <button value="6"  onclick="display(5)">5</button></td>
+                   <td> <button value="5"  onclick="display(6)">6</button></td>
+                   <td> <button value="-" class="operator"  onclick="display('-')">-</button></td>
+                </tr>
+
+                <tr class="row">
+                    <td> <button value="7" onclick="display('1')">1</button></td>
+                    <td> <button value="6"  onclick="display(2)">2</button></td>
+                    <td> <button value="5"  onclick="display(3)">3</button></td>
+                    <td> <button value="+" class="operator"  onclick="display('+')">+</button></td>
                 </div>
-                <div class="row">
-                    <button value="1/x"  onclick="fraction()">1/x</button>
-                    <button value="x2"  onclick="power()">x&#178;</button>
-                    <button value="2rootx"  onclick="display(2)">&#8730;</button>
-                    <button value="/" class="operator"  onclick="display('/')">/</button>
-                </div>
-                <div class="row">
-                    <button value="7" onclick="display('7')">7</button>
-                    <button value="8"  onclick="display(8)">8</button>
-                    <button value="9"  onclick="display(9)">9</button>
-                    <button value="*" class="operator"  onclick="display('*')">*</button>
-                </div>
-                <div class="row">
-                    <button value="7" onclick="display('4')">4</button>
-                    <button value="6"  onclick="display(5)">5</button>
-                    <button value="5"  onclick="display(6)">6</button>
-                    <button value="-" class="operator"  onclick="display('-')">-</button>
-                </div>
-                <div class="row">
-                    <button value="7" onclick="display('1')">1</button>
-                    <button value="6"  onclick="display(2)">2</button>
-                    <button value="5"  onclick="display(3)">3</button>
-                    <button value="+" class="operator"  onclick="display('+')">+</button>
-                </div>
-                <div class="row">
-                    <button value="c" class="clear" onclick="append()">+/-</button>
-                    <button value="0" class="operator"  onclick="display(0)">0</button>
-                    <button value="/" class="operator"  onclick="display('.')">.</button>
-                    <button value="=" id="equals" onclick="compute()">=</button>
-                </div>
-            </div>
+                <tr class="row">
+                   <td><button value="%" class="operator" onclick="display('%')">%</button></td> 
+                   <td><button value="0" class="operator"  onclick="display(0)">0</button></td> 
+                   <td><button value="/" class="operator"  onclick="display('.')">.</button></td> 
+                   <td><button value="=" id="equals" onclick="compute()">=</button></td> 
+                </tr>
+
+            </table>
         </div>
     </div>
    <script src="javascript.js"></script>
